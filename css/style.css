@@ -1,20 +1,16 @@
-/* ===== 기본 설정 ===== */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
-  font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   margin: 0;
-  background: linear-gradient(180deg, #f4f7fb, #eef1f6);
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f4f7fb;
   color: #2f3640;
 }
 
-/* ===== 헤더 ===== */
 header {
   background: linear-gradient(135deg, #273c75, #40739e);
-  color: #fff;
-  padding: 26px 16px;
+  color: white;
+  padding: 28px 16px;
   text-align: center;
 }
 
@@ -24,114 +20,60 @@ header h1 {
 }
 
 header p {
-  margin-top: 6px;
-  font-size: 0.95rem;
-  opacity: 0.9;
+  margin-top: 8px;
+  font-size: 1.05rem;
 }
 
-/* ===== 메인 ===== */
 main {
   max-width: 900px;
-  margin: 28px auto;
+  margin: 30px auto;
   padding: 0 14px;
 }
 
-/* ===== 문제 카드 ===== */
 .problem {
-  background: #ffffff;
+  background: white;
   border-radius: 18px;
-  padding: 24px 26px;
-  margin-bottom: 26px;
+  padding: 24px;
+  margin-bottom: 28px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.problem:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
 }
 
 .problem h2 {
   margin-top: 0;
-  font-size: 1.2rem;
   color: #192a56;
 }
 
-.problem p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-/* ===== 버튼 ===== */
 button {
   margin-top: 14px;
-  background: linear-gradient(135deg, #44bd32, #4cd137);
+  background: #44bd32;
   color: white;
   border: none;
   padding: 10px 18px;
-  font-size: 0.95rem;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 6px 14px rgba(68,189,50,0.35);
-  transition: all 0.2s ease;
 }
 
-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(68,189,50,0.45);
-}
-
-/* ===== 해설 영역 ===== */
 .solution {
-  margin-top: 20px;
   display: none;
+  margin-top: 20px;
 }
 
-/* 공통 박스 스타일 */
-.section-box {
-  border-radius: 14px;
-  padding: 18px 20px;
-  margin-bottom: 16px;
+.section {
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
 }
 
-/* 교과서 */
-.textbook {
-  background: #eaf2ff;
-  border-left: 6px solid #40739e;
-}
+.textbook { background: #eaf2ff; border-left: 6px solid #40739e; }
+.concept  { background: #eafff2; border-left: 6px solid #44bd32; }
+.explain  { background: #f5f6fa; border-left: 6px solid #7f8fa6; }
 
-/* 핵심 개념 */
-.concept {
-  background: #eafff2;
-  border-left: 6px solid #44bd32;
-}
-
-/* 풀이 */
-.explain {
-  background: #f5f6fa;
-  border-left: 6px solid #7f8fa6;
-}
-
-.section-box strong {
+.section strong {
   display: block;
   margin-bottom: 6px;
-  font-size: 0.95rem;
 }
 
-.section-box pre {
-  margin: 0;
+.section pre {
   white-space: pre-wrap;
   line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-/* ===== 모바일 ===== */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.3rem;
-  }
-
-  .problem {
-    padding: 20px;
-  }
 }
