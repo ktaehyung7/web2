@@ -4,18 +4,26 @@
   <meta charset="UTF-8" />
   <title>김희원을 위한 오늘의 수학문제</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <h1>김희원을 위한 오늘의 수학문제</h1>
-  <p id="day-indicator"></p>
-</header>
+  <!-- ===== 상단 제목 ===== -->
+  <header class="header">
+    <h1>김희원을 위한 오늘의 수학문제</h1>
+    <p id="day-indicator"></p>
+  </header>
 
-<main id="problem-container"></main>
+  <!-- ===== 문제 출력 영역 (★ 가장 중요) ===== -->
+  <main id="problem-container">
+    <!-- JS에서 문제를 여기에 삽입 -->
+  </main>
 
-<script src="data/problems.js"></script>
-<script src="js/app.js"></script>
+  <!-- ===== JS 로딩 순서 중요 ===== -->
+  <script src="data/problems.js"></script>
+  <script src="js/app.js"></script>
+
 </body>
 </html>

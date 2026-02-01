@@ -1,41 +1,48 @@
-* { box-sizing: border-box; }
+/* ===== 초기화 ===== */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  background: #f4f7fb;
-  color: #2f3640;
+  font-family: "Noto Sans KR", Arial, sans-serif;
+  background-color: #f4f6fa;
+  color: #2c3e50;
 }
 
-header {
+/* ===== 상단 ===== */
+.header {
   background: linear-gradient(135deg, #273c75, #40739e);
   color: white;
   padding: 28px 16px;
   text-align: center;
 }
 
-header h1 {
+.header h1 {
   margin: 0;
   font-size: 1.6rem;
 }
 
-header p {
+#day-indicator {
   margin-top: 8px;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
-main {
+/* ===== 문제 영역 ===== */
+#problem-container {
   max-width: 900px;
   margin: 30px auto;
-  padding: 0 14px;
+  padding: 0 16px 60px;
 }
 
+/* ===== 문제 카드 ===== */
 .problem {
   background: white;
-  border-radius: 18px;
-  padding: 24px;
+  border-radius: 16px;
+  padding: 22px;
   margin-bottom: 28px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .problem h2 {
@@ -43,30 +50,50 @@ main {
   color: #192a56;
 }
 
-button {
+.problem p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* ===== 버튼 ===== */
+.problem button {
   margin-top: 14px;
-  background: #44bd32;
-  color: white;
-  border: none;
   padding: 10px 18px;
-  border-radius: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #44bd32;
+  color: white;
+  font-size: 0.95rem;
   cursor: pointer;
 }
 
+.problem button:hover {
+  background-color: #3aa72c;
+}
+
+/* ===== 해설 영역 ===== */
 .solution {
-  display: none;
-  margin-top: 20px;
+  display: none; /* 기본은 숨김 */
+  margin-top: 18px;
 }
 
+/* ===== 해설 박스 ===== */
 .section {
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 14px;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
-.textbook { background: #eaf2ff; border-left: 6px solid #40739e; }
-.concept  { background: #eafff2; border-left: 6px solid #44bd32; }
-.explain  { background: #f5f6fa; border-left: 6px solid #7f8fa6; }
+.textbook {
+  background-color: #eaf2ff;
+  border-left: 6px solid #40739e;
+}
+
+.explain {
+  background-color: #f1f2f6;
+  border-left: 6px solid #7f8fa6;
+}
 
 .section strong {
   display: block;
@@ -74,6 +101,6 @@ button {
 }
 
 .section pre {
+  margin: 0;
   white-space: pre-wrap;
-  line-height: 1.6;
 }
